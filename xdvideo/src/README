@@ -1,3 +1,7 @@
 wkcto welcome!
 hello GitHub!
 learn springboot
+
+The biggest difference between distributed and
+centralized is that developers can commit locally,
+and each developer can copy a complete Git repository on their own machine by cloning it
