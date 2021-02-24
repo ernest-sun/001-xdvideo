@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="net.xdclass.xdvideo.mapper.VideoOrderMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="net.xdclass.xdvideo.model.VideoOrder">
+        <id column="id" property="id" />
+        <result column="openid" property="openid" />
+        <result column="out_trade_no" property="outTradeNo" />
+        <result column="state" property="state" />
+        <result column="create_time" property="createTime" />
+        <result column="notify_time" property="notifyTime" />
+        <result column="total_fee" property="totalFee" />
+        <result column="nickname" property="nickname" />
+        <result column="head_img" property="headImg" />
+        <result column="video_id" property="videoId" />
+        <result column="video_title" property="videoTitle" />
+        <result column="video_img" property="videoImg" />
+        <result column="user_id" property="userId" />
+        <result column="ip" property="ip" />
+        <result column="del" property="del" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, openid, out_trade_no, state, create_time, notify_time, total_fee, nickname, head_img, video_id, video_title, video_img, user_id, ip, del
+    </sql>
+
+</mapper>
