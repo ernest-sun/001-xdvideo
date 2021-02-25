@@ -20,7 +20,6 @@ import java.util.Map;
  */
 public class HttpUtils {
 
-
     private static  final Gson gson = new Gson();
 
     /**
@@ -77,7 +76,6 @@ public class HttpUtils {
                 .setRedirectsEnabled(true)  //允许自动重定向
                 .build();
 
-
         HttpPost httpPost  = new HttpPost(url);
         httpPost.setConfig(requestConfig);
         httpPost.addHeader("Content-Type","text/html; charset=UTF-8");
@@ -107,12 +105,5 @@ public class HttpUtils {
         }
 
         return null;
-
     }
-
-
-
-
-
-
 }

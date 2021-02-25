@@ -45,7 +45,6 @@ public class JwtUtils {
         return token;
     }
 
-
     /**
      * 校验token
      * @param token
@@ -60,9 +59,5 @@ public class JwtUtils {
 
         }catch (Exception e){ }
         return null;
-
     }
-
-
-
 }

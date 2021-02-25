@@ -75,7 +75,6 @@ public class VideoController {
         videoService.deleteById(videoId);
 
         return JsonData.buildSuccess();
-
     }
 
     @ApiOperation("根据视频id修改视频")
@@ -89,7 +88,4 @@ public class VideoController {
         int rows = videoService.updateById(video);
         return rows == 1 ? JsonData.buildSuccess() : JsonData.buildError("修改失败");
     }
-
-
-	
 }

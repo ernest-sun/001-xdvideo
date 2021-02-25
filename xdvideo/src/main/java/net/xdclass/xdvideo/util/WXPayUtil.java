@@ -2,7 +2,6 @@ package net.xdclass.xdvideo.util;
 
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
-
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.transform.OutputKeys;
@@ -123,7 +122,6 @@ public class WXPayUtil {
 
     /**
      * 校验签名
-     *
      * @param params
      * @param key
      * @return
@@ -136,6 +134,27 @@ public class WXPayUtil {
         return weixinPaySign.equals(sign);
     }
 
+
+    /**
+     * 获取有序map
+     * @param map
+     * @return
+     */
+    public static SortedMap<String,String> getSortedMap(Map<String,String> map){
+
+        SortedMap<String, String> sortedMap = new TreeMap<>();
+        Iterator<String> it =  map.keySet().iterator();
+        while (it.hasNext()){
+            String key  = (String)it.next();
+            String value = map.get(key);
+            String temp = "";
+            if( null != value){
+                temp = value.trim();
+            }
+            sortedMap.put(key,temp);
+        }
+        return sortedMap;
+    }
 
 
 

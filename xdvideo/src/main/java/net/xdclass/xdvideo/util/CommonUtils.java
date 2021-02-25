@@ -8,7 +8,6 @@ import java.util.UUID;
  */
 public class CommonUtils {
 
-
     /**
      * 生成 uuid， 即用来标识一笔单，也用做 nonce_str
      * @return
@@ -19,7 +18,6 @@ public class CommonUtils {
 
         return uuid;
     }
-
 
     /**
      * md5常用工具类
@@ -41,8 +39,5 @@ public class CommonUtils {
             e.printStackTrace();
         }
         return null;
-
     }
-
-
 }

@@ -1,5 +1,10 @@
 package net.xdclass.xdvideo.util;
 
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.EqualsAndHashCode;
+import lombok.NoArgsConstructor;
+
 /**
  * ClassName:JsonData
  * Package:com.xdclass.online_xdclass.utils
