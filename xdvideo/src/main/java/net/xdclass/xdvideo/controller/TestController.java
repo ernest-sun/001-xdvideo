@@ -1,11 +1,8 @@
 package net.xdclass.xdvideo.controller;
 
 import io.swagger.annotations.Api;
-import io.swagger.annotations.ApiOperation;
 import net.xdclass.xdvideo.config.WeChatConfig;
-import net.xdclass.xdvideo.mapper.VideoMapper;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
