@@ -20,4 +20,9 @@
         id, openid, name, head_img, phone, sign, sex, city, create_time
     </sql>
 
+    <select id="findByopenid" resultMap="BaseResultMap">
+        select * from user where openid = #{openid}
+    </select>
+
+
 </mapper>
